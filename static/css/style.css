@@ -1,0 +1,19 @@
+* {
+  padding: none;
+  margin: none;
+  background-color: #040313;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.bg {
+  background-color: #02010c;
+}
+
+.form-control {
+  background-color: #040313;
+  border-color: #161146;
+}
+
+.row {
+  padding-top: 8%;
+}

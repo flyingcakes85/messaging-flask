@@ -1,0 +1,35 @@
+{% extends 'three-layout.html' %} {% block mid %}
+
+<h2>LOGIN</h2>
+<br />
+<form action="{{url_for('login')}}" method="POST">
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input
+      type="text"
+      class="form-control"
+      id="username"
+      name="username"
+      placeholder="Username"
+    />
+  </div>
+  <br />
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="password"
+      name="password"
+      placeholder="Password"
+    />
+  </div>
+  <br />
+  <button type="submit" class="btn btn-primary">Login</button>
+</form>
+<br />
+<p>
+  <a href="{{url_for('register')}}">Register</a>
+</p>
+
+{% endblock %}

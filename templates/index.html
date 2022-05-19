@@ -1,0 +1,28 @@
+{% extends 'three-layout.html' %} {% block mid %}
+
+<div class="create_post">
+  <form action="/" method="POST">
+    <div class="form-group">
+      <label for="content">Post a Message</label>
+      <textarea
+        class="form-control"
+        id="content"
+        name="content"
+        rows="3"
+      ></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<br />
+
+<div class="posts">
+  {% for message in messages %}
+  <div class="message">
+    <h3>{{ message.content }}</h3>
+    <p>{{ message.date_created }}</p>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
